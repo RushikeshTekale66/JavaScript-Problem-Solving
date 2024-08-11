@@ -1,17 +1,13 @@
-//pass the element using rest(...) method
-function add(...arr){
-    let sum = 0;
-    for(let i=0; i<arr.length; i++){
-            sum = sum + arr[i];
-    }
-    return sum;
+function handle(){
+    click = !click;
+    return click;
 }
 
-let arr = [1,2,3,4,5,6,7,8,9,10];
-//copy the array 1 into array 2 using spread operator(...)
-let arr2 = [10,20,30 , ...arr];
+let click = true;
 
-console.log("New array is " , arr2);
+for(let i=0; i<10; i++){
+    console.log(handle());
+    
+}
 
 
-console.log("Addition of array is ", add(1,2,3,4,5,6,7,8,9,10));
