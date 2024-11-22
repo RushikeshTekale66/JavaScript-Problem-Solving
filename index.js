@@ -1,10 +1,7 @@
-function add(){
-    return function(){
-        console.log("Addition is : ", (10+10));
+function add(a){
+    return function(b){
+        console.log("Addition is : ", (a+b));
     }
 }
 
-const result = add();
-
-//Higher order function
-result();
+const result = add(10)(10);
