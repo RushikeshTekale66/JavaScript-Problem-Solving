@@ -1,7 +1,13 @@
-function add(a){
-    return function(b){
-        console.log("Addition is : ", (a+b));
-    }
+function mul(sum){
+    console.log(sum*2);
+    
 }
 
-const result = add(10)(10);
+function add(a, b, ope){
+    let sum = a+b;
+    ope(sum);
+}
+
+//mul is a callback function : it will execute after add function
+
+add(200, 100, mul);
