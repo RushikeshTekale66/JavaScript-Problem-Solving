@@ -1,29 +1,9 @@
+let a = 11;
+let b = '12';
 
-const arr = [8, 7, 6, 5, 4, 3, 2, 1 ];
-console.log("Direct array prienting");
-console.log(arr);
+//Convert to string
+console.log(a+b);
 
-console.log("For each loop");
+//Convert to number
+console.log(a-b);
 
-arr.forEach(element => {
-    console.log(element);
-    
-});
-
-console.log("Using let variable");
-for(let i=0; i<arr.length; i++){
-    setTimeout(()=>{
-        console.log(arr[i]);
-        
-    }, 1000)
-    
-}
-
-console.log("Using var variable");
-for(var i=0; i<arr.length; i++){
-    setTimeout(()=>{
-        console.log(arr[i]);
-        
-    }, 1000)
-    
-}
