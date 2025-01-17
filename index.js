@@ -1,10 +1,10 @@
-function add(a, b, operation){
-    let sum = a+b;
-    operation(sum);
+function add(...args){
+    let result = 0;
+    for(let i=0; i<args.length; i++){
+        result = result + args[i];
+    }
+    console.log(result);
+    
 }
 
-function mulBy2(sum){
-    console.log(sum*2);
-}
-
-add(10, 20, mulBy2);
+add(2, 3, 4, 5, 6, 6);
