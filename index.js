@@ -1,14 +1,10 @@
-function add(a){
-    return function(b){
-        console.log(a+b);
-        
-    }
+function add(a, b, operation){
+    let sum = a+b;
+    operation(sum);
 }
-//Old technique
-let result = add(10);
-result(10);
 
-//Curring
-add(10)(30);
+function mulBy2(sum){
+    console.log(sum*2);
+}
 
-
+add(10, 20, mulBy2);
