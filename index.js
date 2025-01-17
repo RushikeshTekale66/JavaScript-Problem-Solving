@@ -1,9 +1,14 @@
-var a = 10;
-var b = "Rushikesh";
-var c = true;
+function add(a){
+    return function(b){
+        console.log(a+b);
+        
+    }
+}
+//Old technique
+let result = add(10);
+result(10);
 
-console.log(typeof a);
-console.log((typeof b));
-console.log(typeof c);
+//Curring
+add(10)(30);
 
 
