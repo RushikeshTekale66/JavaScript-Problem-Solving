@@ -1,10 +1,7 @@
-let str = 'Rushikesh';
+let arr = [10, 20, 30, 40, 50];
 
-for(let i=0; i<str.length; i++){
-    for(let j=i+1; j<str.length; j++){
-        if(str.charAt(i)==str.charAt(j)){
-            console.log(str.charAt(i));
-            
-        }
-    }
-}
+let total = arr.reduce((sum, num)=>{
+    return sum+num;
+})
+
+console.log(total);
